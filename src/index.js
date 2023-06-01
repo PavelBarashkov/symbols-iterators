@@ -1,1 +1,2 @@
-import  Team  from "./js/Team"
+/* eslint-disable no-unused-vars */
+import Team from './js/Team';

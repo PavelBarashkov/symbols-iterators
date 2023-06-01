@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --coverage",
-    "lint": "eslint .",
+    "lint": "eslint . --fix",
     "build": "webpack --mode production"
   },
   "author": "",
@@ -17,9 +17,13 @@
     "babel-jest": "^29.5.0",
     "core-js": "^3.30.2",
     "D": "^1.0.0",
-    "eslint": "^8.41.0",
     "jest": "^29.5.0",
     "webpack": "^5.85.0",
     "webpack-cli": "^5.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.41.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5"
   }
 }

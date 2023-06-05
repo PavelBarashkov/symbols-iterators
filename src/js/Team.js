@@ -10,17 +10,17 @@ class Team {
     return {
 
       next() {
-        if (index >= Character.length) {
+        if (index < Character.length) {
+          const character = Character[index];
+          index++;
           return {
-            value: undefined,
-            done: true,
+            value: character,
+            done: false,
           };
         }
-        const character = Character[index];
-        index++;
         return {
-          value: character,
-          done: false,
+          value: undefined,
+          done: true,
         };
       },
     };
